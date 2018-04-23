@@ -14,9 +14,36 @@
  <!--<script src="js/acciones.js"></script>-->
   <script src="phonegap.js"></script><!--necesario*/-->
   
- </head>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
-<body>
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+ </head>
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<body onLoad="MM_preloadImages('archivos/deporte2.jpg')">
 
  <div data-role="page" id="Principal" data-theme="a">
   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
@@ -136,8 +163,8 @@
   <div data-role="content" align="center">
    <div>
     <h2>Skate</h2>
-    <img src="imagenes/deporte.jpg" width="50%" height="50%">
-   </div>
+    
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','archivos/deporte2.jpg',1)"><img src="archivos/deporte1.jpg" width="311" height="162" id="Image10"></a> </div>
   </div>
   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
    <div>
@@ -153,10 +180,33 @@
   </div>
   <div data-role="content" align="center">
    <div>
-    <h2>Me gusta mucho leer, escuchar musicay aveces dibujar</h2> 
-    <img src="imagenes/pasatiempo.jpg" width="50%" height="50%">
-   </div>
+    <h2>Me gusta mucho leer, escuchar musica y aveces dibujar</h2> 
+     </div>
   </div>
+  <div align="center"> <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/musica1.jpg" alt="musica1" title="musica1" id="wows1_0"/></li>
+		<li><img src="data1/images/musica2.png" alt="musica2" title="musica2" id="wows1_1"/></li>
+		<li><img src="data1/images/musica3.jpg" alt="musica3" title="musica3" id="wows1_2"/></li>
+		<li><img src="data1/images/musica4.jpg" alt="musica4" title="musica4" id="wows1_3"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/musica5.jpg" alt="wowslider.com" title="musica5" id="wows1_4"/></a></li>
+		<li><img src="data1/images/musica6.png" alt="musica6" title="musica6" id="wows1_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="musica1"><span><img src="data1/tooltips/musica1.jpg" alt="musica1"/>1</span></a>
+		<a href="#" title="musica2"><span><img src="data1/tooltips/musica2.png" alt="musica2"/>2</span></a>
+		<a href="#" title="musica3"><span><img src="data1/tooltips/musica3.jpg" alt="musica3"/>3</span></a>
+		<a href="#" title="musica4"><span><img src="data1/tooltips/musica4.jpg" alt="musica4"/>4</span></a>
+		<a href="#" title="musica5"><span><img src="data1/tooltips/musica5.jpg" alt="musica5"/>5</span></a>
+		<a href="#" title="musica6"><span><img src="data1/tooltips/musica6.png" alt="musica6"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
    <div>
     <img src="imagenes/persona_rosa.png" width="46" height="46">
